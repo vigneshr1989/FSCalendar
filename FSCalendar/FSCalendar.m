@@ -102,7 +102,6 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
 - (void)selectDate:(NSDate *)date scrollToDate:(BOOL)scrollToDate atMonthPosition:(FSCalendarMonthPosition)monthPosition;
 - (void)enqueueSelectedDate:(NSDate *)date;
 
-- (void)invalidateDateTools;
 - (void)invalidateLayout;
 - (void)invalidateHeaders;
 - (void)invalidateAppearanceForCell:(FSCalendarCell *)cell forDate:(NSDate *)date;

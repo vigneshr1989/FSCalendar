@@ -556,6 +556,8 @@ IB_DESIGNABLE
  */
 - (void)handleScopeGesture:(UIPanGestureRecognizer *)sender;
 
+- (void)invalidateDateTools;
+
 @end
 
 
