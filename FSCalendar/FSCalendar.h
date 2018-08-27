@@ -440,6 +440,15 @@ IB_DESIGNABLE
 @property (readonly, nonatomic) NSArray<NSDate *> *selectedDates;
 
 /**
+ * The timeZone of FSCalender, default is [NSTimeZone localTimeZone]
+ *
+ * e.g. To display date in Paris timezone:
+ *
+ *  calender.timezone = TimeZone(identifier: "Europe/Paris")
+ */
+@property (strong, nonatomic) NSTimeZone *timeZone;
+
+/**
  Reload the dates and appearance of the calendar.
  */
 - (void)reloadData;
